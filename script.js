@@ -66,3 +66,19 @@ for (i = 0, ii=opButtons.length; i<ii; i++) {
   let button = opButtons[i]
   button.addEventListener('click', setOp);
 }
+
+let info = document.getElementById("info")
+let guideBtn = document.getElementById("guideBtn")
+let closeGuideBtn = document.getElementById("closeGuideBtn")
+    
+function reveal () {
+  info.style.display = "block"
+  guideBtn.style.display = "none"
+  closeGuideBtn.style.display = "block"
+}
+
+function closeGuide () {
+  info.style.display = "none"
+  guideBtn.style.display = "block"
+  closeGuideBtn.style.display = "none"
+}

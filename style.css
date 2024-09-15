@@ -1,3 +1,124 @@
-.wow {
-    width: 100px;
-  }
+.container {  
+  display: grid;
+  grid-template-columns: 2.3fr 2.3fr;
+  grid-template-rows: 0.2fr 1.8fr; 
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+  "heading heading"
+  "calcarea instructions";
+  height: 100vh;
+  font-family: 'IBM Plex Mono', monospace;
+}
+  
+.heading { 
+  grid-area: heading; 
+  background-color: #142F44;
+  text-align: center;
+}
+  
+.calcarea { 
+  grid-area: calcarea; 
+  background-color: #A2BBCF;
+}
+  
+.instructions { 
+  grid-area: instructions; 
+  background-color: #4e93b8;
+}
+
+
+
+.calculator {
+  width: 310px;
+  height: 330px;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 4px;
+  margin: 90px 20px 40px 80px;
+  background-color: lightslategray;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.display {
+  width: 298px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 4px;
+  font-size: 44px;
+  font-family: monospace;
+  font-style: italic;
+  text-align: right;
+  margin: 0 auto;
+  margin-bottom: 4px;
+  background-color: #c4c4c4;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.keyboard {
+  text-align: center;
+}
+
+button {
+  margin-bottom: 3px;
+  background-color: gray;
+  color: black;
+  width: 70px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px black solid;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+#zero {
+  width: 229px;
+}
+
+#enter {
+  width: 310px;
+}
+
+#guideBtn {
+  color: #CCF0FF;
+  background-color: #276391;
+  width: auto;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 210px;
+  font-size: 30px;
+}
+
+#guideBtn:hover {
+  background-color: #A2BBCF;
+  color: #276391;
+}
+
+#closeGuideBtn {
+  color: #CCF0FF;
+  background-color: #276391;
+  width: auto;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 210px;
+  font-size: 30px;
+  display: none;
+}
+
+#closeGuideBtn:hover {
+  background-color: #A2BBCF;
+  color: #276391;
+}
+
+#info {
+  margin-left: 30px;
+  margin-right: 20px;
+  font-size: 30px;
+  display: none;
+  overflow-y: scroll;
+}
+
+h1 {
+  color: #CCF0FF;
+}

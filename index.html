@@ -4,49 +4,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>calculator</title>
+  <title>Simple Calculator</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <style>
-    .calculator {
-      width: 120px;
-      border: 1px solid black;
-      border-radius: 12px;
-      padding: 4px;
-      margin: 36px auto;
-    }
 
-    .display {
-      width: 108px;
-      border: 1px solid black;
-      border-radius: 12px;
-      padding: 4px;
-      font-size: 24px;
-      font-family: monospace;
-      font-style: italic;
-      text-align: right;
-      margin: 0 auto;
-      margin-bottom: 4px;
-    }
-
-    .keyboard {
-      text-align: center;
-    }
-
-    button {
-      margin-bottom: 4px;
-    }
-
-    #zero {
-      width: 75px;
-    }
-
-    #enter {
-      width: 108px;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <div class="container">
+    <div class="heading">
+      <h1>Simple Calculator</h1>
+    </div>
+    <div class="instructions">
+      <button id="guideBtn" onclick="reveal ()">Guide</button>
+      <button id="closeGuideBtn" onclick="closeGuide ()">Close</button>
+      <p id="info">This is a simple one digit calculator. Input two, one-digit numbers and an operation, then press enter to receive an answer. When you want to do another problem just type in the new expression.</p>
+    </div>
+  <div class="calcarea">
   <div class="calculator">
     <div class="display">000</div>
     <div class="keyboard">
@@ -70,8 +46,11 @@
       <br>
       <button id="enter">Enter</button>
     </div>
+  
   </div>
-  <script src="script.js"></script>
+  </div>
+  </div>
+  <script src="script.js"> </script>
 </body>
 
 </html>
